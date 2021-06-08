@@ -142,6 +142,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a {
@@ -386,8 +387,19 @@ img {
   visibility: hidden;
 }
 
+header .top-header {
+  display: none;
+  width: 100%;
+}
+
 header nav.navbar {
   background-color: var(--bgcolor1);
+}
+
+header nav.navbar .container {
+  width: 95%;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 header nav.navbar .navbar-brand img {
@@ -440,6 +452,10 @@ header .backdrop-search .backdrop-close:hover {
 
 header .backdrop-search.show {
   display: block;
+}
+
+.main-banner {
+  margin-top: 55px;
 }
 
 .main-banner .banner_carousel .inner-banner img {
@@ -534,6 +550,7 @@ header .backdrop-search.show {
 
 @media (min-width: 992px) {
   header .top-header {
+    display: block;
     position: fixed;
     padding: 5px 0px;
     z-index: 1080;
@@ -1789,6 +1806,11 @@ section.contact .googlemapwrap iframe {
 .table-responsive .table-hover tbody tr:hover {
   background-color: var(--bgcolor1);
   color: var(--color1);
+}
+
+section figure img {
+  width: 100%;
+  height: auto;
 }
 
 section.section-dark {

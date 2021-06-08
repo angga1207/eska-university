@@ -146,6 +146,7 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 a {
@@ -348,8 +349,17 @@ img {
 }
 
 header {
+    .top-header {
+        display: none;
+        width: 100%;
+    }
     nav.navbar {
         background-color: var(--bgcolor1);
+        .container {
+            width: 95%;
+            margin-right: 0;
+            margin-left: 0;
+        }
         .navbar-brand {
             img {
                 width: 200px;
@@ -405,6 +415,7 @@ header {
 }
 
 .main-banner {
+    margin-top: 55px;
     .banner_carousel {
         .inner-banner {
             img {
@@ -487,6 +498,7 @@ header {
 @media (min-width: 992px) {
     header {
         .top-header {
+            display: block;
             position: fixed;
             padding: 5px 0px;
             z-index: 1080;
@@ -1596,6 +1608,15 @@ section.contact {
                 background-color: var(--bgcolor1);
                 color: var(--color1);
             }
+        }
+    }
+}
+
+section {
+    figure {
+        img {
+            width: 100%;
+            height: auto;
         }
     }
 }
